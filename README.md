@@ -19,7 +19,7 @@
     <a href="https://github.com/tomimelo/tomasmelone"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://encode-your-portfolio.vercel.app/">View Demo</a>
+    <a href="https://www.tomasmelone.ml/">View Demo</a>
     ·
     <a href="https://github.com/tomimelo/tomasmelone/issues">Report Bug</a>
     ·
@@ -59,7 +59,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://encode-your-portfolio.vercel.app/)
+[![Product Name Screen Shot][product-screenshot]](https://www.tomasmelone.ml/)
 
 This is my personal website frontend made in Angular.
 Thanks to Camila Nanni who helped me with the responsive design and Camila Melone for the awesome drawing of me!
