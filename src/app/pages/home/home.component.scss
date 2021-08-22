@@ -11,6 +11,10 @@
 
 .avatar {
     width: 250px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: top;
 }
 
 @media only screen and (max-width: 768px) {
