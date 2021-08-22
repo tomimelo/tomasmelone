@@ -8,7 +8,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/tomimelo/tomasmelone">
-    <img src="images/logo.svg" alt="Logo" width="180">
+    <img src="images/avatar.png" alt="Logo" width="180">
   </a>
 
   <h3 align="center">Tomás Melone</h3>
