@@ -1,0 +1,17 @@
+<div class="page-container">
+    <h1>My <span class="red">projects</span></h1>
+    <div class="projects-container">
+        <div class="card" *ngFor="let project of projects">
+            <div class="card-header">
+                <h4>{{project.title}}</h4>
+            </div>
+            <img class="card-image" decoding="async" loading="lazy" [src]="project.img" alt="Project Image">
+            <div class="card-content">
+                <p>{{project.description}}</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="code-button">View more</a>
+            </div>
+        </div>
+    </div>
+</div>

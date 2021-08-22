@@ -1,0 +1,76 @@
+<div class="sidebar" [class.active]="!panelHidden">
+    <div class="sidebar-index">
+        <ul>
+            <li class="sidebar-item" [class.active]="!panelHidden" (click)="panelHidden = !panelHidden">
+                <a>
+                    <ic-icon icon="menu"></ic-icon>
+                </a>
+                <span class="arrow-tooltip">Explorer</span>
+            </li>
+            <li class="sidebar-item">
+                <a>
+                    <ic-icon icon="search"></ic-icon>
+                </a>
+                <span class="arrow-tooltip">Search</span>
+            </li>
+            <li class="sidebar-item">
+                <a href="https://github.com/tomimelo/encode-your-portfolio" target="_blank">
+                    <ic-icon icon="github"></ic-icon>
+                </a>
+                <span class="arrow-tooltip">GitHub</span>
+            </li>
+            <li class="sidebar-item">
+                <a href="https://www.linkedin.com/in/tomasmelone/" target="_blank">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <span class="arrow-tooltip">Linkedin</span>
+            </li>
+            <li class="sidebar-item push-bottom" routerLinkActive="active">
+                <a routerLink="about-me">
+                    <ic-icon icon="account"></ic-icon>
+                </a>
+                <span class="arrow-tooltip">About me</span>
+            </li>
+            <li class="sidebar-item" routerLinkActive="active">
+                <a routerLink="contact">
+                    <ic-icon icon="mail"></ic-icon>
+                </a>
+                <span class="arrow-tooltip">Contact</span>
+            </li>
+        </ul>
+    </div>
+    <div class="sidebar-panel" *ngIf="!panelHidden">
+        <div class="menu-header">
+            Explorer
+        </div>
+        <div class="accordions">
+            <ng-container *ngFor="let accordion of accordions">
+                <a class="accordion-header" [class.active]="accordion.active" (click)="accordion.active = !accordion.active">
+                    <ic-icon [icon]="accordion.active ? 'chevron-down' : 'chevron-right'"></ic-icon>
+                    {{accordion.title}}
+                </a>
+                <div class="accordion-content">
+                    <ul>
+                        <div *ngFor="let link of accordion.children">
+                            <li  routerLinkActive="active">
+                                <a *ngIf="!link.external else externalLink" [routerLink]="link.url">
+                                    <i [class]='link.icon'></i>
+                                    <span>{{link.text}}</span>
+                                </a>
+                                <ng-template #externalLink>
+                                    <a href="{{link.url}}" target="_blank">
+                                        <i [class]='link.icon'></i>
+                                        <span>{{link.text}}</span>
+                                    </a>
+                                </ng-template>
+                            </li>
+                            <span class="simple-tooltip">{{link.text}}</span>
+                        </div>
+                    </ul>
+                </div>
+            </ng-container>
+            
+        </div>
+    </div>
+    <div class="sidebar-overlay" (click)="panelHidden = true"></div>
+</div>

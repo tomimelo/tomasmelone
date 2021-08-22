@@ -1,0 +1,34 @@
+.page-container {
+    align-items: center;
+    justify-content: center;
+}
+
+.main-buttons {
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+.avatar {
+    width: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .main-buttons {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    .avatar {
+        width: 200px;
+    }
+}

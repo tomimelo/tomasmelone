@@ -1,0 +1,30 @@
+<div class="footer" [class.active]="footerActive">
+    <div class="head-row">
+        <span class="tab-button" (click)="footerActive = !footerActive">TERMINAL</span>
+        <button (click)="footerActive = !footerActive">
+            <ic-icon [icon]="footerActive ? 'chevron-down' : 'chevron-up'"></ic-icon>
+        </button>
+        <span class="simple-tooltip">{{footerActive ? 'Minimize footer' : 'Restore footer'}}</span>
+    </div>
+    <div class="footer-content">
+        <div class="footer-body">
+            <p><a routerLink="about-me">About me</a></p>
+            <p><a routerLink="contact">Contact</a></p>
+            <p>C:\&copy;\{{actualYear}}\Tomas Melone> All rights reserved</p>
+        </div>
+        <div class="media-links">
+            <a  class="clickable-link" href="#">
+                <i class='bx bxl-facebook-circle' ></i>
+                Facebook
+            </a>
+            <a  class="clickable-link" href="#">
+                <i class='bx bxl-twitter' ></i>
+                Twitter
+            </a>
+            <a  class="clickable-link" href="#">
+                <i class='bx bx-world'></i>
+                Website
+            </a>
+        </div>
+    </div>
+</div>

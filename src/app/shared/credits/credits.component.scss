@@ -1,0 +1,43 @@
+.web-credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    width: 100%;
+    padding: 0 10px;
+    height: 20px;
+    background-color: var(--tertiary);
+    color: white;
+}
+
+span, a {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+    cursor: pointer;
+    padding: 0 5px;
+
+    &:hover {
+        background-color: #585A51;
+
+        b {
+            text-decoration: underline;
+        }
+    }
+
+    ic-icon {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .web-credits {
+        justify-content: center;
+        
+        span {
+            display: none;
+        }
+    }
+}

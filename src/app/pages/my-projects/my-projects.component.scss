@@ -1,0 +1,13 @@
+.page-container {
+    flex-direction: column;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.5em), 1fr));
+    gap: 2em;
+}
+
+.card-content {
+    font-size: 0.9em;
+}

@@ -1,0 +1,56 @@
+.page-container {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.personal-info {
+    max-width: 50em;
+}
+
+.developer-kit {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: clamp(1em, 2vw, 1.5em);
+    }
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 12.5em;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+
+    ic-icon {
+        font-size: 2.5em;
+    }
+}
+
+.card-content ul {
+    line-height: 1.9em;
+}
+
+@media only screen and (max-width: 540px) {
+    .personal-info h2 {
+        margin-bottom: 1.3em;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 1.3em;
+    }
+}
