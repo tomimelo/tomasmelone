@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.avatar {
+    width: 150px;
+}
+
 .personal-info {
     max-width: 50em;
 }
@@ -44,7 +48,7 @@
     line-height: 1.9em;
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 650px) {
     .personal-info h2 {
         margin-bottom: 1.3em;
     }
