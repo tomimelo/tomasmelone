@@ -10,24 +10,28 @@ export class MyProjectsComponent implements OnInit {
 
   public projects: IProject[] = [
     {
-      title: "Project A",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat lorem sed dui eleifend luctus...",
-      img: "../../../assets/imgs/placeholder-image.png"
+      title: "Sellery",
+      description: "Sellery is a platform that allows you to integrate your company's systems with Mercado Libre and automate your business.",
+      img: "../../../assets/imgs/sellery-image.webp",
+      disabled: true
     },
     {
-      title: "Project B",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat lorem sed dui eleifend luctus...",
-      img: "../../../assets/imgs/placeholder-image.png"
+      title: "NANO",
+      description: "NANO is a software aimed to IT companies to manage and automate their business. It allows you to monitorize the events that occur within your company and avoid system failures. Includes databases and tasks manager.",
+      img: "../../../assets/imgs/placeholder-image.png",
+      disabled: true
     },
     {
-      title: "Project C",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat lorem sed dui eleifend luctus...",
-      img: "../../../assets/imgs/placeholder-image.png"
+      title: "Tarsius",
+      description: "Tarsius is a Twitch watcher bot that integrates with a Telegram bot to manage it easily via commands. It can handle login confirmation codes and captcha verification. Built using Puppeteer.",
+      img: "../../../assets/imgs/placeholder-image.png",
+      disabled: true
     },
     {
-      title: "Project D",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat lorem sed dui eleifend luctus...",
-      img: "../../../assets/imgs/placeholder-image.png"
+      title: "Basic Node TS Express Server",
+      description: "This is a basic structure in typescript for a node express server project. It has error and exception handlers, loggers and database connector incorporated.",
+      img: "../../../assets/imgs/nodets.webp",
+      src: "https://github.com/tomimelo/basic-node-express-ts"
     }
   ]
 

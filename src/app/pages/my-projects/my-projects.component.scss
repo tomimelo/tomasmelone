@@ -5,9 +5,29 @@
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.5em), 1fr));
+    grid-auto-rows: minmax(25em, auto);
     gap: 2em;
 }
 
 .card-content {
     font-size: 0.9em;
+}
+
+.card-footer .code-button:hover + .simple-tooltip {
+    transition: var(--tooltip-transition);
+    transition-delay: var(--tooltip-delay);
+    visibility: visible;
+    opacity: 1;
+}
+
+.simple-tooltip {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.coming-soon {
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5em;
+    padding: 1.5em;
 }

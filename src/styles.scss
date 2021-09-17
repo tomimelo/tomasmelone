@@ -113,11 +113,22 @@ button, .code-button {
     }
 }
 
+.code-button.disabled {
+    cursor: not-allowed;
+    background-color: #929088;
+
+    &:hover {
+        background-color: #929088;
+    }
+}
+
 .card {
     padding: 10px;
     background-color: #2D2E29;
     color: var(--text);
     border: 1px solid #75715E;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-header {
@@ -135,6 +146,7 @@ button, .code-button {
 .card-image {
     object-fit: cover;
     width: calc(100% + 20px);
+    aspect-ratio: 1.5/1;
     margin: 0 -10px 10px -10px;
 }
 
@@ -142,12 +154,15 @@ button, .code-button {
     margin-bottom: 10px;
 }
 
+.card-footer {
+    margin-top: auto;
+}
+
 input, textarea {
     background-color: var(--tertiary);
     border: none;
     outline: 0;
     color: #BBBBBA;
-    // height: 25px;
     padding: 5px;
 
     &:focus {
