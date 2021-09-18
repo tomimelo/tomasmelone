@@ -4,36 +4,9 @@
     justify-content: center;
 }
 
-.card {
-    width: min(47em, 100%);
-}
-
-.card-content {
-    display: flex;
-    gap: 0.8em;
-}
-
-.form-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8em;
-
-    textarea {
-        resize: none;
-    }
-}
-
-@media only screen and (max-width: 1080px) {
-    .card-content {
-        gap: 2em;
-        flex-direction: column-reverse;
-    }
-
-    .media-links {
-        border: none;
-        display: grid;
-        column-gap: 0.8em;
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 10em), 1fr));
+.media-links {
+    border: none;
+    a {
+        font-size: 1em;
     }
 }
