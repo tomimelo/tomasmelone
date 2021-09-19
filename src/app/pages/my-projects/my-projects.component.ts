@@ -23,7 +23,7 @@ export class MyProjectsComponent implements OnInit {
     },
     {
       title: "Tarsius",
-      description: "Tarsius is a Twitch watcher bot that integrates with a Telegram bot to manage it easily via commands. It can handle login confirmation codes and captcha verification. Built using Puppeteer.",
+      description: "Tarsius is a Twitch watcher bot integrated with Telegram to manage it easily via commands. It can handle login confirmation codes and captcha verification. Built using Puppeteer.",
       img: "../../../assets/imgs/tarsius-image.webp",
       disabled: true
     },
